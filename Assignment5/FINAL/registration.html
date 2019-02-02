@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Lim's Sign Up
+  </title>
+  <link rel="stylesheet" type="text/css" href="css/site.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--icon for header logo-->
+  <link rel='stylesheet' href='normalize1.css' type='text/css' media='screen'>
+  <script src="registration.js"></script>
+
+
+</head>
+
+<body>
+  <div class="main">
+
+
+    <div class="header">
+      <i class="material-icons">face</i>
+      <h1>Kirby</h1>
+    </div>
+
+    <!-- navigation -->
+    <div class="column nav">
+      <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a class="active" href="registration.html">Register</a></li>
+          <li> <a onclick="alert('Sorry, not available yet.')">Contact</a></li>
+          <li> <a onclick="alert('Sorry, not available yet.')">Shop</a></li>
+      </ul>
+    </div>
+
+
+
+    <div class="column content">
+      <div class="intro" id="INTR">
+        <h3>SIGN UP
+        </h3><hr>
+        <!-- registration form -->
+        <form id="registration" name="form1" action="https://httpbin.org/post" method="post" autocomplete="on" onsubmit='return formValidation();'>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+              <label for="name">First name:</label>
+              <input type="text" name="firstname" required="required">
+            </p>
+            <p>
+              <label for="lastname">Last name:</label>
+              <input type="text" name="lastname" required="required">
+            </p>
+
+            <p>
+              <div class="radio">
+                  <label for="gender">Gender:</label>
+                <input type="radio" name="gender" required="required" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+            </p>
+            </div>
+
+            <p>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </p>
+
+
+            <p>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required="required">
+            </p>
+
+            <p>
+              <label for="pwconfirm">Confirm Password:</label>
+              <input type="password" id="pwconfirm " name="pwconfirm" required="required">
+            </p>
+
+
+            <p>
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" required="required">
+            </p>
+
+            <p>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="eg. ###-###-####" required="required">
+            </p>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Shipping Address</legend>
+            <p>
+              <label for="province">Province:</label>
+              <select name="province" required="required">
+
+                <option value="alberta">ALBERTA</option>
+                <option value="novas cotia">NOVA</option>
+                <option value="ontario" selected>ONTARIO</option>
+                <option value="saskatchewan">SASKATCHEWAN</option>
+
+              </select>
+            </p>
+            <p>
+              <label for="city">City:</label>
+              <input type='text' id='city' name='city' required />
+            </p>
+            <p>
+                <label for="unit">Unit #:</label>
+                <input type="number" name="unit" required>
+              </p>
+            <p>
+                <p>
+                    <label for="streetnumber">Street #:</label>
+                    <input type="number" name="streetnumber" required>
+                  </p>
+                <p>
+              <label for="street">Street:</label>
+              <input type="text" name="street" required>
+            </p>
+            <p>
+              <label for="zipcode">Zip Code:</label>
+              <input type="text" name="zipcode" placeholder="eg. T3T2M2" required="required">
+            </p>
+
+            <input type="hidden" name="lastName" id="lastName" value="Lim" />
+            <input type="hidden" name="studentId" id="studentId" value="131684177" /> <br>
+          </fieldset> <br>
+          <!--error result-->
+          <div id='errors'></div>
+          <!-- form button-->
+          <p>
+              <button type="submit" id="submit" value="Submit">Submit</button>
+              <button type="reset" id="clear" value="Clear" onclick="clearerrors()">Clear</button>
+            </p>
+        </form>
+      </div>
+    </div>
+
+    <!--side bar-->
+    <div class="column sidebar">
+        <h3>SIDE BAR <br>
+            PLACE YOUR ADS HERE!
+          </h3>
+        <button onclick="location.href='registration.html'" id="sidebutton">Join now!</button>
+    </div> 
+
+    <div class="footer">
+      <h3>&copy; 2018 Kirby Lim</h3>
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>

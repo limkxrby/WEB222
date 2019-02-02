@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800|Luckiest+Guy|Nunito|Sunflower:300');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url("bg.jpg");
+    background-repeat: repeat;
+ 
+}
+
+.header {
+    background:rgba(233, 233, 233, 0.548);
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 25px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 8px 2px -4px rgba(126, 126, 126, 0.493);
+  
+}
+
+.header h1{
+    text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(13, 173, 120); 
+    font-size: 50px;   
+}
+
+i {
+    padding-top: 5px;
+    position: absolute;
+    color:  rgb(13, 173, 120); 
+}
+
+.main {
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px;
+    
+}
+
+li a {
+    display: block;
+    color:rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+}
+
+.active{
+    background-color:rgb(2, 78, 68);
+    color: white;
+    border-radius: 5px;
+}
+
+li a:hover {
+    color: white;
+    box-shadow: 0px 0px 5px 5px rgba(8, 255, 201, 0.678);
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(100, 100, 100), 0 0 0.2em rgb(136, 136, 136);
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+.column {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    float: left;
+    padding: 10px;
+    height: 600px;
+}
+
+.nav  {
+    margin-top: 20px;
+    background-color: rgba(57, 160, 126, 0.808);
+    padding: 30px 15px;
+    width: 17%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav ul {
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+} 
+
+.content {
+    background-color: rgba(230, 230, 230, 0.301);
+    margin: 20px;
+    margin-left: 0px;  
+    padding: 20px 20px;
+    width: 60%;
+    border: 1px solid gray;
+    overflow:auto; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+.sidebar{
+    margin: 20px;
+    padding: 5px;
+    width: 17%;
+    height: 460px;
+    border: 1px solid gray;
+    text-align: center;
+    color: #e78e09
+}
+
+#sidebutton{
+    margin-top: 150%;
+    width: 100%;
+    background: #e78e09;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.footer {
+    clear: both;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-top: 40px; 
+    text-align: center;
+    background-color: #eeeeee;
+    font-size: 13px;
+    color: #4f9641
+}
+
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+        padding: 1em;
+        font-family: 'Dosis', sans-serif;
+        
+
+    }
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+    
+button:hover {
+    opacity:2;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(100, 100, 100), 0 0 0.2em rgb(136, 136, 136);
+}
+
+    input, textarea {
+        font-size: 1em;
+        width: 80%;
+        height: 35px;
+        border: 1px solid #999;
+    }
+    select {
+        height: 35px;
+        width: 80%;
+    }
+    
+
+    input:focus, textarea:focus {
+    
+        border-color: rgb(17, 196, 17);
+        background-color: rgba(230, 230, 230, 0.301);
+        outline: none;
+    }
+    
+
+
+    button {
+        background-color:   rgba(57, 160, 126); 
+        color: white;
+        padding: 15px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        opacity: 0.9;
+        float: left;
+        
+    }
+    
+    #clear {
+        background-color: rgb(201, 34, 62)
+    }
+
+    .radio {
+width: 60%;
+
+    }
+
+    #errors {
+        background-color: rgba(248, 159, 159, 0.281);
+        text-align: center;
+        border: 1px solid red;
+    }
